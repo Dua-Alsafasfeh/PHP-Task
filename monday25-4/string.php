@@ -97,3 +97,151 @@ echo " <br>";
 echo " <hr>";
 ?>
 <!-- ................................... -->
+<?php 
+echo "<h2> 8.	Write a PHP script to replace the first word of the sentence with another word.  </h2>";
+$str = 'That new trainee is so genius.';
+$output = preg_replace('/That/','Our', $str);
+echo $str ."==> <br>";
+echo $output ."<br>";
+
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+<?php 
+echo "<h2> 9.	Write a PHP script to find the first character that is different between two strings.   </h2>";
+$str1 = 'dragonball';
+$str2 = 'dragonboll';
+$pos = strspn($str1 ^ $str2 , "\0");
+echo $str1 ."<br>";
+echo $str2 ."<br>";
+printf ('First difference between two strings at position %d:" %s vs %s"',$pos , $str1[$pos] , $str2[$pos]);
+
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+<?php 
+echo "<h2> 10.	Write a PHP script to put a string in an array, use the (var_dump) to view the array.  </h2>";
+
+$arr = array("Twinkle", "twinkle", "little star");
+echo '<pre>'; print_r($arr); echo '</pre>';
+#print_r($arr)."<br>";
+echo var_dump($arr);
+
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+<?php 
+echo "<h2> 11.	Write a PHP script to print the next letter of the inputted letter.   </h2>";
+$cha = 'a';
+$nextletter = ++$cha;
+//The following if condition prevent you to go beyond 'z' or 'Z' and will reset to 'a' or 'A'.
+if (strlen($nextletter) > 1) 
+{
+ $nextletter = $nextletter[0];
+ }
+echo "chacacter is " .$cha ."<br>";
+echo "next letter is " .$nextletter ."<br>";
+
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+<?php 
+echo "<h2> 12.	Write a PHP script to insert a string at the specified position in a given string.   </h2>";
+$original_string = 'The brown fox';
+$string_to_insert ='quick';
+$insert_pos = 4;
+$new_str = substr_replace($original_string , $string_to_insert .' ' ,$insert_pos,0);
+echo $original_string ."==> <br>";
+echo $new_str ."<br>";
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+<?php 
+echo "<h2> 13.	Write a PHP script to remove zeroes from the given number.   </h2>";
+$str = '0000657022.24';
+$newstr = ltrim($str , '0');
+echo $str ."==><br>";
+echo $newstr ."<br>";
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+<?php 
+echo "<h2> 14.	Write a PHP script to remove part of a string.  </h2>";
+$str ='The quick brown fox jumps over the lazy dog';
+
+$newstr = str_replace('fox' ," ", $str);
+echo $str ."==><br>";
+echo $newstr ."<br>";
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+<?php 
+echo "<h2> 15.	Write a PHP script to remove trailing dashes from a string.   </h2>";
+$str ='The quick brown fox jumps over the lazy dog---';
+
+$newstr = str_replace('-' ," ", $str);
+echo $str ."==><br>";
+echo $newstr ."<br>";
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+<?php 
+echo "<h2> 16.	Write a PHP script to remove Special characters from the following string. </h2>";
+$str ='\"\1+2/3*2:2-3/4*3';
+$newstr = str_replace(str_split('\\/:*?"<>|+-'),' ',$str);
+echo $str ."==><br>";
+echo $newstr ."<br>";
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+<?php 
+echo "<h2> 17.	Write a PHP script to select first 5 words from the following string.  </h2>";
+$str ='The quick brown fox jumps over the lazy dog';
+$newstr = implode(' ', array_slice(explode(' ',$str),0,5));
+echo $str ."==><br>";
+echo $newstr ."<br>";
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+<?php 
+echo "<h2>18.	Write a PHP script to remove comma(s) from the following numeric string.  </h2>";
+$str ='2,543.12';
+$newstr = str_replace(',','',$str);
+echo $str ."==><br>";
+echo $newstr ."<br>";
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+<?php 
+echo "<h2>19.	Write a PHP script to print letters from 'a' to 'z'.  </h2>";
+for ($i = ord('a'); $i<= ord('z'); $i++){
+    echo chr($i) ." ";
+}
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+<?php 
+echo "<h2>20. Write a PHP script to get the first word of a sentence.  </h2>";
+$str ='The quick brown fox';
+$newstr = explode(' ',trim($str));
+echo $str ."==><br>";
+echo $newstr[0] ."<br>";
+echo " <br>";
+echo " <hr>";
+?>
+<!-- ................................... -->
+
+
+
