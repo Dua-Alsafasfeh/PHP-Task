@@ -8,6 +8,9 @@
         body{
             background-color: #FAD9E6;
         }
+        h1{
+            text-align: center;
+        }
         h2{
             color: #46244C;
         }
@@ -18,6 +21,8 @@
     <title>PHP-logical Tasks</title>
 </head>
 <body>
+    <h1>logical statements Tasks</h1>
+    <hr style=" width:25%">
     
 </body>
 </html>
