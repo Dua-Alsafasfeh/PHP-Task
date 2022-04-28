@@ -7,18 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-<form actio="" method="post">
+<form action="" method="post">
     Enter URL:
     <input type="text" name="url" id="url" placeholder="search.." required>
     <br><br>
-    <input type="button" value="GO" name="go">
-
+    <button type="submit" value="submit" name="Go">GO</button>
 </form>
 </body>
 </html>
 <?php
-if(isset($_POST['go']) && !empty($_POST['go'])){
+if(isset($_POST['Go']) && !empty($_POST['Go'])){
     $_url=$_POST['url'];
-    header('location: .$_url');
+    header('location: '.$_url);
 }
 ?>
