@@ -1,3 +1,12 @@
+<?php
+     session_start();
+
+    //  unset($_SESSION['email']);
+
+     session_destroy();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +16,6 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>8. Write a PHP script to redirect a user to a different page.
- Expected output: Redirect the user to https://www.w3schools.com/</h3>
+    <a href="./page2.php">Go back to page 2</a>
 </body>
 </html>
-<?php
-header('Location: https://www.w3schools.com/');
-?>

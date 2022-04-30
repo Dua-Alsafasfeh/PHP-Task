@@ -33,7 +33,7 @@ echo " <hr>";
 echo "<h2> 2.	Write a PHP script splitting the following numeric string to be a date format. </h2>";
 $str = '085119';
 echo $str ." ==> " .chunk_split($str,2,":") ."<br>" ;
-
+#echo $str ." ==> " .date("y:m:d", (strtotime($str)));
 echo " <br>";
 echo " <hr>";
 ?>

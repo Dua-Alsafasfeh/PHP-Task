@@ -160,11 +160,12 @@ echo "<hr>";
 <?php
 echo "<h2>8.Write a program which will count the 'c' characters in the text Orange Coding Academy. 
  </h2>";
-$text = "orange coding academy";
+$text = "Orange Coding Academy";
+$text2 = strtolower($text);
 $char = 'c';
 $count = 0;
-for ( $i = 0; $i< strlen($text); $i++){
-    if (substr($text , $i , 1) == $char){
+for ( $i = 0; $i< strlen($text2); $i++){
+    if (substr($text2 , $i , 1) == $char){
         $count+= 1;
     }
 }
@@ -233,21 +234,44 @@ echo "<hr>";
 ?>
 <!-- /////////////////////////// -->
 <?php
-// echo "<h2> 12.Write a PHP program to print the following pattern. 
-// </h2>";
-// $alpha = range('A', 'E');
-// $k = 0;
-// for($i=1; $i<= 5; $i++)
-// {
-//  for($j=1; $j< 5-$i; $j++){
-//      echo "&nbsp;&nbsp;";
-//   #echo " ";
-//  }
-//  for($k=0; $k<=$i; $k++){
-//      echo "<div>".$alpha[$k]."</div>"; 
-//  } 
-//  echo "<br>";
-// }
-// echo "<br>";
-// echo "<hr>";
+//first part
+$space = 0;
+$letters = 4;
+for ($i=0; $i < 5 ; $i++) { 
+ echo "<pre style='font-size:20px;'>";
+    for ($x=$space; $x < 4; $x++ ) { 
+       echo " ";
+       
+    }
+    $letter = "A";
+    for ($y=$letters; $y <=4 ; $y++) { 
+        
+        
+        echo $letter . " ";
+        $letter++;
+    }
+    echo "</pre>";
+ 
+    $space++;
+    $letters--;
+}
+//second part
+$space1 = 0;
+$letters1 = 3;
+for ($i=0; $i < 5 ; $i++) { 
+    echo "<pre style='font-size:20px;'>";
+       for ($x=$letters1; $x < 4; $x++ ) { 
+          echo " ";
+          
+       }
+       $letter = "A";
+       for ($y=$space1; $y <=3 ; $y++) { 
+           echo $letter . " ";
+           $letter++;
+       }
+       echo "</pre>";
+    
+       $space1++;
+       $letters1--;
+   }
 ?>
