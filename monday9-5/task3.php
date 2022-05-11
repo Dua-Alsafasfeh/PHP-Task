@@ -1,4 +1,6 @@
 <?php
+//requesting input in the first part, and responding in the second, through the magic of PHP's if-else statement. In the first section, give the user an input field and request that they enter a day of the week.
+echo "<title> Task 3 </title>";
 if(isset($_POST['submit']) && !empty($_POST['day']))
 {
    $day = $_POST['day'];

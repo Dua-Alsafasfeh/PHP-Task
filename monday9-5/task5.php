@@ -1,4 +1,6 @@
 <?php
+//write an array variable of weather conditions with the following values: rain, sunshine, clouds, hail, sleet, snow, wind. 
+
 echo "<title> Task 5 </title>";
 echo "<h2>weather conditions</h2>";
 $arr = ['rain', 'sunshine', 'clouds', 'hail', 'sleet', 'snow', 'wind'];

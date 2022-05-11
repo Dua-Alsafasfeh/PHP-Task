@@ -1,4 +1,7 @@
 <?php
+// rewrite the previous exercise using a select field for the user input and the switch statement to process the response.
+
+echo "<title> Task 4 </title>";
 if (isset($_POST['submit']) && !empty($_POST['day'])) {
     $day = $_POST['day'];
     switch ($day) {
