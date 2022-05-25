@@ -7,7 +7,7 @@ class simpleclass{
     }
 }
 $show =new simpleclass();
- $show ->display();
+$show ->display();
 
 
 // /////////
@@ -25,8 +25,8 @@ class Fruit {
     }
   }
   
-  $apple = new Fruit();
-  $banana = new Fruit();
+  // $apple = new Fruit();
+  // $banana = new Fruit();
   $apple->set_name('Apple');
   $banana->set_name('Banana');
   
